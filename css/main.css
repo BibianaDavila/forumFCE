@@ -1,0 +1,504 @@
+/*=== Fontes ======================*/
+@font-face{
+    font-family: Theano;
+    src: url('../fonts/TheanoDidot-Regular.ttf');
+}
+/* seleção */
+::-moz-selection { /* Code for Firefox */
+    color: #FFF;
+    background: #3b4538;
+}
+::selection {
+    color: #FFF; 
+    background: #3b4538;
+}
+/*==================== home ===================*/
+section{
+	display: table;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+}
+section article{
+	display: table-cell; 
+	vertical-align: middle;
+}
+.site-content{
+	margin-bottom: 90px;
+}
+.site-wrapper.padding{
+	padding-bottom: 90px;
+}
+.button{
+	outline: none;
+	border: 2px solid #576b54;
+	border-radius: 15px;
+	color: #576b54;
+	background-color: #FFF;
+
+	padding: 5px 20px;
+	margin: 15px 10px;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Arial';
+	font-weight: bold;
+	letter-spacing: 2px;
+
+	transition: .2s all ease;
+}
+.button:hover{
+	color: #FFF;
+	background-color: #576b54;
+}
+/*=== home ===*/
+.logo{
+	margin: auto;
+	max-width: 100%;
+}
+.title{
+	font-family: 'Theano';
+	font-size: 60px;
+	line-height: 65px;
+	color: #475644;
+}
+.separator{
+	width: 50%;
+	margin: 30px auto;
+	border-bottom: 3px solid #576b54;
+}
+.desc{
+	margin: auto;
+	width: 70%;
+	color: #475644;
+	text-align: justify;
+	font-family: 'Times New Roman';
+	font-size: 16px;
+}
+/*=== painéis ===*//* folder!*/
+.section-folder{
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+}
+.folder-container{
+	background-color: #536650;
+}
+.folder-panel{
+	display: table;
+	height: 90vh; /* calcular */
+	width: 580px; /* calcular */
+	margin: 25px;
+	border: 7px solid #fff; 
+}
+.folder-panel .content{
+	display: table-cell; 
+	vertical-align: middle;
+	padding: 40px 0px;
+	text-align: center;
+	color: #FFF;
+
+	font-family: 'Theano';
+	font-size: 35px;
+	line-height: 40px;
+}
+.folder-panel .content .logo-img{
+	margin: 110px 0px;	
+}
+.folder-panel .content .local{
+	font-size: 24px;
+}
+
+/* painéis */
+.section-panels{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 50px;
+}
+.panel-container{
+	font-family: 'Times New Roman';
+	font-size: 16px;
+	padding: 60px 100px;
+	color: #536650;
+}
+
+.panel-title{
+	font-family: 'Ramabhadra', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.panel-turno{
+	margin: 0px 5px 0px 50px;
+	padding: 2px 10px;
+	background: #536650;
+	color: #FFF;
+	font-size: 12px;
+	border-radius: 15px;
+}
+.panel-time{
+	font-size: 14px;
+}
+
+.panel-separator{
+	margin: 0px 100px;
+}
+
+/*=== eventos ===*/
+.events{
+	margin-top: 50px;
+}
+.event-container{
+	border: 3px solid #576b54;
+	margin: 30px;
+}
+.event-date{
+    padding: 15px;
+    font-family: 'Theano';
+    text-align: center;
+    color: white;
+    background-color: #576b54;
+}
+.event-date .day{
+    line-height: 70px;
+	font-size: 80px;
+}
+.event-date .month{	
+    font-size: 25px;
+    line-height: 10px;
+}
+.event-date .time{	
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+.event-desc{
+	padding: 15px;
+	color: #576b54;
+	font-family: 'Theano';
+	font-size: 13px;
+}
+.event-title{
+	font-family: 'Ramabhadra', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 16px;
+	letter-spacing: 2px;
+}
+.event-subtitle{
+	font-size: 17px;
+	line-height: 15px;
+}
+/*=== contato ===*/
+.section-contact{
+	padding: 70px 0px 35px 0px;
+	width: 90%;
+	margin: auto;
+}
+.contact-title{
+	padding: 10px 15px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #FFF;
+	background-color: #536650;
+}
+.contact-text{
+	text-align: left;
+    margin: 30px 30px 50px 30px;
+    letter-spacing: 2px;
+    color: #536650;
+}
+.contact-form{
+    width: 100%;
+    margin-left: 25px;
+    margin-top: -80px;
+    padding: 90px 15px 15px 15px;
+    border: 10px solid #536650;
+}
+.contact-img{
+	margin: 25px 0px;
+}
+.control-input{
+	width: 100%;
+	padding: 7px 10px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 18px;
+	min-height: 32px;
+	color: #536650;
+	background-color: #e6e6e6;
+
+	outline: none;
+	box-shadow: none;
+	border: none;
+	resize: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #536650;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #536650;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #536650;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #536650;
+}
+
+/*=== menu ===*/
+.menu{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 90px;
+	background: #536650; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #536650 , #3b4538); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #536650, #3b4538); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #536650, #3b4538); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #536650 , #3b4538); /* Standard syntax */
+	border-top: 15px solid #7bb372;
+}
+.menu-itens{
+	padding: 0px;
+	margin: 25px 0px;
+	text-align: center;
+	font-family: 'Arial';
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.menu-itens li{
+	display: inline-block;
+	margin: 0px 60px;
+}
+.menu-itens li a{
+	color: #FFF;
+	padding: 5px 30px;
+	border: 2px solid #FFF;
+	border-radius: 15px;
+	transition: .2s all ease;
+	text-decoration: none;
+}
+
+.menu-itens li a:hover{
+	color: #536650;
+	background-color: #FFF;
+}
+
+
+/*=========== responsivo!  ===========*/
+@media (max-width: 1199px){
+	.logo{
+		width: 250px;
+	}
+	.title{
+		font-size: 45px;
+		line-height: 45px;
+	}
+
+	.section-folder{
+		width: 400px;
+	}
+	.folder-panel .content{
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.folder-panel .content .local{
+		font-size: 18px;
+	}
+	.folder-panel .content .logo-img{
+		margin: 40px 0px;
+	}
+	.section-panels{
+		padding: 30px;
+	}
+	.panel-container{
+		padding: 30px 80px;
+	}
+	.panel-separator{
+		margin: 0px 60px;
+	}
+
+	.event-desc{
+		padding: 15px 0px;
+	}
+	.menu-itens li{
+		margin: 0px 20px;
+	}
+}
+@media (max-width: 991px){
+	.title{
+		font-size: 35px;
+		line-height: 35px;
+	}
+
+	.section-folder{
+		width: 310px;
+	}
+	.folder-panel .content{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.folder-panel .content .local{
+		font-size: 15px;
+	}
+
+	.section-panels{
+		padding: 20px;
+	}
+	.panel-container{
+		padding: 20px 50px;
+		font-size: 13px;
+	}
+	.panel-title{
+		font-size: 18px;
+	}
+	.panel-turno{
+		font-size: 10px;
+	}
+	.panel-time{
+		font-size: 12px;
+	}
+	.panel-separator{
+		margin: 0px 35px;
+	}
+
+	.event-desc{
+		font-size: 10px;
+		margin-left: -15px;
+		margin-right: 15px;
+	}
+	.event-title{
+		font-size: 13px;
+	}
+	.event-subtitle{
+		font-size: 14px;
+	}
+	.event-date .month{
+		font-size: 18px;
+		line-height: 1px;
+	}
+	.event-date .time{
+		font-size: 12px;
+	}
+	.event-date .day{
+	    line-height: 60px;
+	    font-size: 50px;
+	}
+
+	.contact-text{
+		margin-right: 0px;
+	}
+
+	.menu-itens li{
+		margin: 0px 15px;
+	}
+	.menu-itens li a{
+		padding: 5px 20px;
+	}
+}
+@media (max-width: 767px){
+
+	.menu-itens li{
+		margin: 0px;
+	}
+	.menu-itens li a{
+		padding: 5px 10px;
+	}
+
+	.section-folder{
+		width: 480px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.folder-panel .content{
+		font-size: 27px;
+		line-height: 30px;
+	}
+	.folder-panel .content .local{
+		font-size: 18px;
+	}
+
+	.contact-form{
+		padding: 15px;
+		margin: 0px;
+	}
+
+
+	.button{
+		margin: 10px 5px;
+	}
+}
+@media (max-width: 480px){
+	.container{
+		width: 300px;
+	}
+	.menu-itens li a{
+		padding: 3px;
+		font-size: 9px;
+		border: 1px solid #FFF;
+	}
+
+	.logo{
+		width: 180px;
+	}
+	.title{
+		font-size: 26px;
+		line-height: 25px;
+	}
+	.desc{
+		width: 100%;
+	}
+
+	.section-folder{
+		max-width: 260px;
+	}
+	.folder-panel .content{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.folder-panel .content .local{
+		font-size: 12px;
+	}
+	.folder-panel .content .logo-img{
+		width: 70px;
+		margin: 20px 0px;
+	}
+
+	.panel-container{
+		padding: 20px 15px;
+	}
+	.panel-separator{
+		margin: 0px;
+	}
+
+	.event-date{
+		padding: 0px;
+	}
+	.event-date .day{
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.event-date .month{
+		font-size: 11px;
+		line-height: 1px;
+	}
+	.event-date .time{
+		font-size: 7px;
+		line-height: 8px;
+	}
+	.event-date .place{
+	    font-size: 8px;
+	    padding-bottom: 10px;
+	}
+}
